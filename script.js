@@ -79,11 +79,12 @@ function operation(operation)
 
 function calculate()
 {
-  let temp;
+  let temp = result.innerHTML;
 
-  temp = result.innerHTML;
   calc = eval(temp);
 
+  console.log(typeof eval(temp));
+  
   result.innerHTML = calc;
 }
 
